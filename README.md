@@ -1,9 +1,9 @@
 # Data 195- Final Project 
-Tina CHen
+Tina Chen
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ls88-openscienceconnector/final-project/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/czz129/data195_final_project/master)
 
-This project for Data Science Honors program. The purpose of this project is to attempt to reproduce the findings in the original analysis regarding the LLM for Cueniform Text analysis. We will also evaluate the efficacy and reliability of this data set to qualify any conclusions that we draw. For more detailed information, see our [Pre-Analysis Plan].
+This project for Data Science Honors program. The purpose of this project is to attempt to reproduce the findings in the original analysis regarding the LLM for Cueniform Text analysis. We will also evaluate the efficacy and reliability of this data set to qualify any conclusions that we draw. For more detailed information, see the [Pre-Analysis Plan].
 
 ## Directory Structure
 
@@ -12,10 +12,8 @@ This repo contains a few subfolders which contain the elements of this project.
 | Folder | Description |
 |-----|-----|
 | `data`  | data from the original analysis in CSV, TSV, and pip-separated format  |
-| `images`  | image files used in the Jupyter Notebooks  |
 | `notebooks`  | Jupyter Notebook files, including reproduction analysis using both `pandas` and `datascience`, as well as the Pre-Analysis Plan and a "blank" notebook  |
 | `output`  | output data (same as original, for demo purposes) in CSV and TSV format  |
-| `subassignments`  | Markdown files with submissions for final project sub-assignments  |
 
 ## Final Project Details
 
