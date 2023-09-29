@@ -45,7 +45,7 @@ You should note that this repository has a MyBinder link (at the top of this REA
 5. Paste this text into your README right below where your names are listed at the top. For our repo, it looked like this:
 
 ```markdown
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ls88-openscienceconnector/final-project/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/czz129/data195_final_project/master)
 ```
 
 Here is a screenshot of the website filled out for this repo:
