@@ -46,6 +46,8 @@ Through these efforts, we aim to construct a comprehensive language model that c
 
 ## Methodology
 ### Methodology for the Cuneiform Language System Project
+![Dependency_pipeline](https://github.com/czz129/data195_final_project/assets/89886448/0c856266-c56e-4226-b3b6-e6738c09430d)
+
 
 The methodology of the "Building a Language Model for the Cuneiform Language System" project is multi-faceted, incorporating various data science and natural language processing (NLP) techniques to analyze and interpret the Cuneiform language.
 
@@ -103,21 +105,3 @@ You should note that this repository has a MyBinder link (at the top of this REA
 ```markdown
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/czz129/data195_final_project/master)
 ```
-
-Here is a screenshot of the website filled out for this repo:
-
-![Binder Screenshot](images/binder.png)
-
-### Github Best Practices
-
-Note that this repository has a README and that each subfolder (except for the `images` folder) has a README as well. This should be reflected in the repo that you submit.
-
-Make sure that your files render properly in Github. For example, Github does not render the LaTeX `\limits` command, and any display math that uses it will not be rendered.
-
-**License:** Your repository should have a license on it. For most, if not all, of you, this will be a CC0 license, however, we leave it at your discretion to choose the license for your project. Because Github no longer lists the CC0 template in its template chooser, we provide a link below to load this template into your repository. To use it, simply replace `<repo>` with the name of your repository.
-
-### Deliverables
-
-Your project should have some deliverable (e.g. PDF, PPT, data). These should be uploaded in the `output` folder of your repo. If it is not a file you can upload (e.g. a Google Slides presentation), it should be linked-to in the README for that folder (even if this means you have a folder that is empty except for a README).
-
-## Sources
