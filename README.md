@@ -48,38 +48,55 @@ Through these efforts, we aim to construct a comprehensive language model that c
 ### Methodology for the Cuneiform Language System Project
 ![Dependency_pipeline](https://github.com/czz129/data195_final_project/assets/89886448/0c856266-c56e-4226-b3b6-e6738c09430d)
 
+### Step 1: Data Cleaning and Transformation
 
-The methodology of the "Building a Language Model for the Cuneiform Language System" project is multi-faceted, incorporating various data science and natural language processing (NLP) techniques to analyze and interpret the Cuneiform language.
+#### Collection and Storage:
+- Store all files on Google Drive.
+- Digitize the raw text data using Optical Character Recognition (OCR).
+- Organize the digitized data at the page level, categorizing it based on book chapters.
 
-**1. Data Collection and Organization:**
-   - The project starts with collecting a vast array of Cuneiform texts, stored as over 13,000 files in Google Drive. The data, primarily secondary resources, includes texts in multiple languages.
-   - The raw data is organized at the page level, categorically based on books, which sets the foundation for subsequent processing.
+#### Data Transformation and Standardization:
+- Process the OCR outputs by converting texts from page level to word level, assigning each word a unique identifier.
 
-**2. Data Transformation:**
-   - A key step is transforming the raw data into a structured format. This involves converting texts from page level to word level using the `words.ipynb` notebook.
-   - We also implemented methods to correct the misprinted words from the raw data to increase the overall accuracy of the text.
+### Step 2: Language Detection
 
-**3. Language Detection and Lemmatization:**
-   - Since the raw data mainly consists of secondary resources, Language detection is employed to identify the various languages present in the texts. We have developed `language_detect.ipynb` to identify the language within the text.
-   - Lemmatization is applied to bring words to their base or dictionary form. This process aids in the standardization of data, especially important for ancient languages.
+#### Preprocessing Words:
+- Correct misprinted words and errors introduced during the OCR process, improving the accuracy and reliability of the textual data.
 
-**4. Sentence Segmentation:**
-  -  Sentence segmentation is then conducted using `sentences_strict.ipynb`, transitioning the data from word level to sentence level, crucial for detailed linguistic analysis.
-  - We have implemented the rule-based approach to segment the text from page level to sentence level for later translation. We still want to use machine learning models such Hidden Markov Model or Neural Network Model to increase the accuracy. 
+#### Translation Consistency:
+- Statistical hypothesis testing was applied to address and quantify inconsistencies in translations of certain language sequences that appeared in the texts.
+- A chi-square test was used to determine if the differences in translation rates between two interpretations (e.g., Sumerian versus Akkadian) were statistically significant.
 
-**5. Dependency Parsing:**
-   - The project aims to construct dependency parsers for Cuneiform and other low-resource languages. This involves developing algorithms to analyze the grammatical structure and relationships between words in sentences.
-   - The use of Large Language Models (LLMs) like BERT and other advanced NLP tools is a crucial aspect of this process, providing the capability to understand complex linguistic patterns.
+### Step 3: Sentence Segmentation
 
-**5. Computational Analysis:**
-   - Computational analysis is utilized to identify the correct linguistic structures within the Cuneiform texts. This step involves analyzing the syntax and semantics of the language, supported by the models and algorithms developed.
+#### Data Loading and Pre-processing:
+- Identify punctuation marks, join partitioned words, and clean the text to prepare it for segmentation.
 
-**6. Iterative Refinement and Evaluation:**
-   - Evaluate the accuracy of sentence translations against original versions by utilizing metrics such as Recall, Precision, and F-1 Score for validation.
-   - The models and methods are continually refined and evaluated to improve accuracy and efficacy. This involves frequent testing and adjustments based on the analysis outcomes.
+#### Segmentation Process:
+- Use Neural Network Models to segment the sentence.
+- Run a rule-based approach to further segment with regex, a set of rules and conditions designed to accurately determine sentence boundaries.
 
-By employing these methods, the project endeavors to create a comprehensive language model that can accurately translate and interpret Cuneiform texts. The methodology reflects an
-innovative blend of traditional linguistics and modern data science, aimed at unlocking the secrets of one of the world's oldest written languages.
+### Step 4: Language Analysis
+
+#### Construction of Dependency Parsers:
+- Development of dependency parsing algorithms to analyze grammatical structures and relationships between words within sentences.
+
+#### Integration with Wikibase Lexicons:
+- Utilization of dependency parsers to identify parts of speech and lemmatized tokens, which are then mapped to a Wikibase lexicon.
+
+### Grapheme Level Analysis:
+- Normalization, transliteration, and encoding of lexemes into Unicode cuneiform.
+- Link signs and lexemes to the Wikidata list.
+
+#### Morphological Annotation:
+- Decomposition of word forms and annotation of each lexical category with corresponding Q-items from Wikidata.
+- Detailed analysis of verbs, affixes, and their grammatical features to enrich the morphological understanding.
+
+#### Syntactic and Semantic Analysis:
+- Construct syntactic mappings to elucidate the roles of subjects and word forms in sentences.
+- Semantic analysis through the addition of Q-identifiers as senses to lexemes, establishing connections between lexemes and senses.
+
+
 
 ## Conclusion
 By integrating traditional NLP techniques with advanced language models, this project aims to significantly contribute to the understanding of Cuneiform languages. Our approach balances the use of 
